@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message LatitudeLongitude {
+  int32 latitude = 1;  // Must be in range [-90.0, 90.0]
+  int32 longitude = 2; // Must be in range [-180.0, 180.0]
+}

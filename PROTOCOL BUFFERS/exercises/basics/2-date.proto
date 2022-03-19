@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message Date {
+  int32 year = 1;  // From 1 to 9999, 0 to specify date without a year
+  int32 month = 2; // From 1 to 12, no way to enforce this in protobuf, must be
+                   // enforced by code
+  int32 day = 3; // From 1 to 31 and valid for year and month, validated in code
+}
